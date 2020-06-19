@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import Paypal from "../Paypal/Paypal";
+import MyApp from "../Paypal/Paypal";
 import classes from "./CartTotals.css";
 const CartTotals = ({ value,history }) => {
   const { cartSubTotal, cartTax, cartTotal, clearCart } = value;
@@ -20,11 +20,7 @@ const CartTotals = ({ value,history }) => {
       <h3>
         <strong>TOTAL : </strong>£{cartTotal}
       </h3>
-      <Paypal 
-      total={cartTotal}
-      clearCart={clearCart}
-      history={history}
-      />
+      <MyApp/>
     </div>
   );
 };
