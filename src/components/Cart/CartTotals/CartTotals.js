@@ -20,7 +20,11 @@ const CartTotals = ({ value,history }) => {
       <h3>
         <strong>TOTAL : </strong>£{cartTotal}
       </h3>
-      <MyApp/>
+      <MyApp 
+      total={cartTotal}
+      clearCart={clearCart}
+      history={history}
+      />
     </div>
   );
 };
